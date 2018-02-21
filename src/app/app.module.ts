@@ -11,6 +11,7 @@ import { AboutComponent } from './about/about.component';
 import { DynamicearthComponent } from './dynamicearth/dynamicearth.component';
 import { CollectionComponent } from './collection/collection.component';
 import { RatingCategoryPipe } from './pipes/rating-category.pipe';
+import { RatingComponent } from './rating/rating.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { RatingCategoryPipe } from './pipes/rating-category.pipe';
     AboutComponent,
     DynamicearthComponent,
     CollectionComponent,
-    RatingCategoryPipe
+    RatingCategoryPipe,
+    RatingComponent
 ],
   imports: [
     BrowserModule,
