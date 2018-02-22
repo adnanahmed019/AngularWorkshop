@@ -5,30 +5,35 @@
 </h3>
 <div [hidden]="!showOperatingHours">
   <mat-card>
-    <mat-card-subtitle><strong>Operating Hours</strong></mat-card-subtitle>
+    <mat-card-subtitle>
+      <strong>Operating Hours</strong>
+    </mat-card-subtitle>
     <mat-card-content>{{openingTime | date:'shortTime'}} - {{closingTime | date:'shortTime'}} (M-F)</mat-card-content>
   </mat-card>
 </div>
 <div>
+  Search Books By Tite or Author:
+  <input (keyup)="searchTerm$.next($event.target.value)">
   <mat-list>
     <mat-list-item *ngFor="let book of books">
       {{book|json}}
       <mat-icon mat-list-icon> book </mat-icon>
-      <h3 mat-line><strong>{{book.title}}</strong></h3>
+      <h3 mat-line>
+        <strong>{{book.title}}</strong>
+      </h3>
       <p mat-line>
         <span>{{book.author}}</span>
-        </p>
-        <p mat-line>
+      </p>
+      <p mat-line>
         <!--{{book.rating | ratingCategory}}-->
         <my-rating [rating]="book.rating" [book]="book" (ratingClicked)="onRatingUpdate($event)">
         </my-rating>
-        </p>       
+      </p>
       <p mat-line>
         <span [class]="book.isCheckedOut ? 'chip chip-danger' : 'chip chip-success'">
-        {{book.isCheckedOut ? 'Checked-Out' : 'Available'}}
-      </span>
+          {{book.isCheckedOut ? 'Checked-Out' : 'Available'}}
+        </span>
       </p>
     </mat-list-item>
   </mat-list>
 </div>
-

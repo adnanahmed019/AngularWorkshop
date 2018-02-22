@@ -5,6 +5,7 @@ import {MatListModule, MatCardModule, MatSlideToggleModule, MatDialogModule, Mat
 MatSnackBarModule, MatTabsModule, MatButtonModule, MatLineModule, MatToolbarModule } from '@angular/material';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {FormsModule} from '@angular/forms';
+import {HttpModule} from '@angular/http'
 
 import { AppComponent } from './app.component';
 import { AboutComponent } from './about/about.component';
@@ -37,7 +38,8 @@ import { RatingComponent } from './rating/rating.component';
     MatLineModule,
     MatToolbarModule,
     BrowserAnimationsModule,
-    FormsModule
+    FormsModule,
+    HttpModule
   ],
   providers: [],
   bootstrap: [AppComponent]
