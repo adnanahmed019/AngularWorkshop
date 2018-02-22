@@ -18,5 +18,14 @@
   </li>
 </ul>-->
 
-<app-about></app-about>
-<my-collection></my-collection>
+<!--<app-about></app-about>
+<my-collection></my-collection>-->
+
+<div class="container">
+  <mat-toolbar color="warn">
+    <span>{{title}}</span>
+    <span class="fill-remaining-space"></span>
+    <img src="assets/img/books-icon.png" class="center-block" style="max-height:100px" />
+  </mat-toolbar>
+  <app-tabs></app-tabs>
+</div>

@@ -13,6 +13,8 @@ import { DynamicearthComponent } from './dynamicearth/dynamicearth.component';
 import { CollectionComponent } from './collection/collection.component';
 import { RatingCategoryPipe } from './pipes/rating-category.pipe';
 import { RatingComponent } from './rating/rating.component';
+import { TabsComponent } from './tabs/tabs.component';
+import {AppRoutingModule} from './app-routing/app-routing.module'
 
 
 @NgModule({
@@ -22,7 +24,8 @@ import { RatingComponent } from './rating/rating.component';
     DynamicearthComponent,
     CollectionComponent,
     RatingCategoryPipe,
-    RatingComponent
+    RatingComponent,
+    TabsComponent
 ],
   imports: [
     BrowserModule,
@@ -39,7 +42,8 @@ import { RatingComponent } from './rating/rating.component';
     MatToolbarModule,
     BrowserAnimationsModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
