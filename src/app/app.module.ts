@@ -14,7 +14,8 @@ import { CollectionComponent } from './collection/collection.component';
 import { RatingCategoryPipe } from './pipes/rating-category.pipe';
 import { RatingComponent } from './rating/rating.component';
 import { TabsComponent } from './tabs/tabs.component';
-import {AppRoutingModule} from './app-routing/app-routing.module'
+import {AppRoutingModule} from './app-routing/app-routing.module';
+import { BookDetailComponent } from './book-detail/book-detail.component'
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import {AppRoutingModule} from './app-routing/app-routing.module'
     CollectionComponent,
     RatingCategoryPipe,
     RatingComponent,
-    TabsComponent
+    TabsComponent,
+    BookDetailComponent
 ],
   imports: [
     BrowserModule,
