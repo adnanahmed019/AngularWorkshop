@@ -4,6 +4,8 @@ import { Http, Response } from "@angular/http";
 import { Observable } from "rxjs/Observable";
 
 //How to write alternative way?
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import
+// https://stackoverflow.com/questions/41127479/es6-import-for-side-effects-meaning
 import "rxjs/add/operator/map";
 import "rxjs/add/operator/catch";
 import "rxjs/add/operator/debounceTime";
